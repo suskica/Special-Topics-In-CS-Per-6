@@ -35,9 +35,5 @@ public class ResetToCheckpoint : MonoBehaviour
             rb.constraints = RigidbodyConstraints.FreezeAll;
             Invoke("removeConstraints", repspawnDelay);
         }
-
-        if (other.gameObject.tag == "Loop") {
-            
-        }
     }
 }
