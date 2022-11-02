@@ -36,4 +36,5 @@ public class ResetToCheckpoint : MonoBehaviour
             Invoke("removeConstraints", repspawnDelay);
         }
     }
+   
 }
