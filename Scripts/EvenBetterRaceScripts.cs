@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BetterRaceScript : MonoBehaviour
+public class EvenBetterRaceScript : MonoBehaviour
 {
     private float totalTime;
     private float lapTime;
