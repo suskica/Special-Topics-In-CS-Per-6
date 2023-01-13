@@ -5,36 +5,19 @@ using UnityEngine.UI;
 
 public class WhoWon : MonoBehaviour
 {
-
-    public double currentLap = 0;
-    public double lapsRequired = 3;
-
     public Sprite winImg;
     public Sprite loseImg;
     public Image image;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void OnTriggerEnter(Collider other){
-        currentLap++;
-        if (currentLap >= lapsRequired) {
-            if (other.gameObject.name.Contains("AI")) {
+        if (other.gameObject.tag == "AI") {
                 //ai win
+                //Debug.Log("ai registered");
                 image.sprite = loseImg;
-            } else {
+            } else if (other.gameObject.tag == "Player") {
                 //player win
                 image.sprite = winImg;
             }
-        }
     }
 
 }
