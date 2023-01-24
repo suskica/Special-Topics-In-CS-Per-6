@@ -53,6 +53,7 @@ public class AIRaceScript : MonoBehaviour
                 if (lapCount >= lapAmount) {
                     racing = false;
                     toggle.isOn = true;
+                    Time.timeScale = 0f;
                 }
             }   
         }

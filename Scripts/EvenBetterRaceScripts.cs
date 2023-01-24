@@ -75,6 +75,7 @@ public class EvenBetterRaceScripts : MonoBehaviour
                 if (lapCount >= lapAmount) {
                     racing = false;
                     toggle.isOn = true;
+                    Time.timeScale = 0f;
                 }
             }   
         }
