@@ -16,17 +16,11 @@ public class WhoWon : MonoBehaviour
     //else if player reaches the finish line save the winner display into the image variable to show the player
     void OnTriggerEnter(Collider other){
         if (other.gameObject.tag == "AI") {
-<<<<<<< HEAD
-                
-                image.sprite = loseImg;
-            } else if (other.gameObject.tag == "Player") {
-=======
                 //changes the image to a lose one
                 image.sprite = loseImg;
             } else if (other.gameObject.tag == "Player") {
                 //changes the image to a win one
->>>>>>> 8da9b61d425ee5fc270e01006253c252e2ebc760
-                image.sprite = winImg;
+                 image.sprite = winImg;
             }
     }
 
