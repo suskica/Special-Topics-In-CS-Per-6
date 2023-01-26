@@ -11,11 +11,10 @@ public class WhoWon : MonoBehaviour
 
     void OnTriggerEnter(Collider other){
         if (other.gameObject.tag == "AI") {
-                //ai win
-                //Debug.Log("ai registered");
+                //changes the image to a lose one
                 image.sprite = loseImg;
             } else if (other.gameObject.tag == "Player") {
-                //player win
+                //changes the image to a win one
                 image.sprite = winImg;
             }
     }
