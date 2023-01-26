@@ -9,6 +9,7 @@ public class MainMenu : MonoBehaviour
     // Loads the Level One Scene from the Project Build using the Scene Manager
     public void LevelOne ()
     {
+        // Time Scale Unpauses the game, this is the same for all Time.timeScale = 1f methods
         Time.timeScale = 1f;
         SceneManager.LoadScene("Car3");
     }
